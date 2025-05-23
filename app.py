@@ -49,7 +49,7 @@ def generate_qr():
 
         if custom_text:
             try:
-                font = ImageFont.truetype("Arial.ttf", size=40)
+                font = ImageFont.load_default()
             except IOError:
                 font = ImageFont.load_default()
             draw = ImageDraw.Draw(img_with_text)
